@@ -90,6 +90,8 @@ class NICClient(object):
     IST_HOST = "whois.afilias-srs.net"
     CHAT_HOST = "whois.nic.chat"
     WEBSITE_HOST = "whois.nic.website"
+    UNO_HOST = "whois.nic.uno"
+    HOST_HOST = "whois.nic.host"
     
 
     WHOIS_RECURSE = 0x01
@@ -258,6 +260,10 @@ class NICClient(object):
             return NICClient.CHAT_HOST
         elif tld == 'website':
             return NICClient.WEBSITE_HOST
+        elif tld == 'uno':
+            return NICClient.UNO_HOST
+        elif tld == 'host':
+            return NICClient.HOST_HOST
         else:
             return tld + NICClient.QNICHOST_TAIL
 
