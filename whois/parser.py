@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 # parser.py - Module for parsing whois response data
 # Copyright (c) 2008 Andrey Petrov
 #
